@@ -1,0 +1,3 @@
+Este arquivo foi criado como uma maneira de me localizar nos dados do arquivo csv:
+
+o primeiro dado corresponde ao ID do voou, o segundo dado é a hora da partida  que se encontra em minutos decimais, terceiro dado corresponde a duração do voou, 4º id da compania que irar fazer o voo, 5º de onde o voo partiu, 6º o destino do voo, 7º dia da semana que o voo saiu, 8º se ele atrasou ou não sendo 0 não 1 sim  
