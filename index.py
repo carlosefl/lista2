@@ -116,15 +116,15 @@ sWN = 'WN'
 sCO = 'CO'
 sAA = 'AA'
 sYV = 'YV'
-sEV = 'YV'
+sEV = 'EV'
 sXE = 'XE'
 s_9E= '9E'
 sOH = 'OH'
 sUA = 'UA'
-sMQ = 'UA'
-sAS = 'MQ'
-sF9 = 'AS'
-sHA = 'F9'
+sMQ = 'MQ'
+sAS = 'AS'
+sF9 = 'F9'
+sHA = 'HA'
 
 # agora vamos começar a filtar o filtro é o que recebe os dados atrasados e o 2 recebe sem atraso 
 
@@ -133,7 +133,206 @@ filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sDL)
 
 dl_S = banco[filtro].shape[0]
 dl_N = banco[filtro2].shape[0]
-# A parti dai é só ler  a quantidade de casos de cada um e adicionar em variaveis. 
-print(dl_N,dl_S)
-print(dl_N+dl_S)
-print(DL)
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sOO)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sOO)
+
+OO_S = banco[filtro].shape[0]
+OO_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sB6)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sB6)
+
+
+B6_S = banco[filtro].shape[0]
+B6_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sUS)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sUS)
+
+US_S = banco[filtro].shape[0]
+US_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sFL)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sFL)
+
+
+FL_S = banco[filtro].shape[0]
+FL_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sWN)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sWN)
+
+
+WN_S = banco[filtro].shape[0]
+WN_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sCO)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sCO)
+
+CO_S = banco[filtro].shape[0]
+CO_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sAA)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sAA)
+
+
+AA_S = banco[filtro].shape[0]
+AA_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sYV)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sYV)
+
+
+YV_S = banco[filtro].shape[0]
+YV_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sEV)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sEV)
+
+
+EV_S = banco[filtro].shape[0]
+EV_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sXE)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sXE)
+
+
+XE_S = banco[filtro].shape[0]
+XE_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == s_9E)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == s_9E)
+
+
+_9E_S = banco[filtro].shape[0]
+_9E_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sOH)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sOH)
+
+
+OH_S = banco[filtro].shape[0]
+OH_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sUA)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sUA)
+
+
+UA_S = banco[filtro].shape[0]
+UA_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sMQ)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sMQ)
+
+
+MQ_S = banco[filtro].shape[0]
+MQ_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sAS)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sAS)
+
+
+AS_S = banco[filtro].shape[0]
+AS_N = banco[filtro2].shape[0]
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sF9)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sF9)
+
+
+F9_S = banco[filtro].shape[0]
+F9_N = banco[filtro2].shape[0]
+
+
+filtro = (banco['Class'] == classe_atraso) & (banco['Airline'] == sHA)
+filtro2 = (banco['Class'] == classe_tudook) & (banco['Airline'] == sHA)
+
+HA_S = banco[filtro].shape[0]
+HA_N = banco[filtro2].shape[0]
+# A parti dai é só ler  a quantidade de casos de cada um e adicionar em variaveis. e vazer as conta pra ver se tem uma execeção muito grande, caso não tenha ai faz as contas da pureza da classe 
+
+#print(dl_N,dl_S)
+#print(OO_N,OO_S)
+#print(B6_N, B6_S)
+#print(US_N, US_S)
+#print(FL_N,FL_S)
+#print(WN_N,WN_S)
+#print(CO_N,CO_S)
+#print(AA_N,AA_S)
+#print(YV_N,YV_S)
+#print(EV_N,EV_S)
+#print(XE_N,XE_S)
+#print(_9E_N,_9E_S)
+#print(OH_N,OH_S)
+#print(UA_N,UA_S)
+#print(MQ_N,MQ_S)
+#print(AS_N,AS_S)
+#print(F9_N,F9_S)
+#print(HA_N,HA_S)
+#não existe nenhum caso estremo vamo pra ponta do lapiz calcular a entropia da classe, para isso vou ter que tirar de cada variavel e bem já estou sem criatividade pra nomes atualmente são 3:00 da madruga :) vou mentir não que to me perdendo todo kkkkkkkkk
+#observação vou fazer um pequeno ajuste tecnico pois eu percebi que não fiz uma varivel que contem a quantidade total de casos de uma unica companhia *-*
+
+entropia_DL = -((dl_S/(dl_S+dl_N)) * math.log2(dl_S) + (dl_N/(dl_S+dl_N)) * math.log2(dl_N))
+entropia_OO = -((OO_S/(OO_S+OO_N)) * math.log2(OO_S) + (OO_N/(OO_S+OO_N)) * math.log2(OO_N))
+entropia_B6 = -((B6_S/(B6_S+B6_N)) * math.log2(B6_S) + (B6_N/(B6_S+B6_N)) * math.log2(B6_N))
+entropia_US = -((US_S/(US_S+US_N)) * math.log2(US_S) + (US_N/(US_S+US_N)) * math.log2(US_N))
+entropia_FL = -((FL_S/(FL_S+FL_N)) * math.log2(FL_S) + (FL_N/(FL_S+FL_N)) * math.log2(FL_N))
+entropia_WN = -((WN_S/(WN_S+WN_N)) * math.log2(WN_S) + (WN_N/(WN_S+WN_N)) * math.log2(WN_N))
+entropia_CO = -((CO_S/(CO_S+CO_N)) * math.log2(CO_S) + (CO_N/(CO_S+CO_N)) * math.log2(CO_N))
+entropia_AA = -((AA_S/(AA_S+AA_N)) * math.log2(AA_S) + (AA_N/(AA_S+AA_N)) * math.log2(AA_N))
+entropia_YV = -((YV_S/(YV_S+YV_N)) * math.log2(YV_S) + (YV_N/(YV_S+YV_N)) * math.log2(YV_N))
+entropia_EV = -((EV_S/(EV_S+EV_N)) * math.log2(EV_S) + (EV_N/(EV_S+EV_N)) * math.log2(EV_N))
+entropia_XE = -((_9E_S/(_9E_S+_9E_N)) * math.log2(_9E_S) + (_9E_N/(_9E_S+_9E_N)) * math.log2(_9E_N))
+entropia_OH = -((OH_S/(OH_S+OH_N)) * math.log2(OH_S) + (OH_N/(OH_S+OH_N)) * math.log2(OH_N))
+entropia_UA = -((UA_S/(UA_S+UA_N)) * math.log2(UA_S) + (UA_N/(UA_S+UA_N)) * math.log2(UA_N))
+entropia_MQ = -((MQ_S/(MQ_S+MQ_N)) * math.log2(MQ_S) + (MQ_N/(MQ_S+MQ_N)) * math.log2(MQ_N))
+entropia_AS = -((AS_S/(AS_S+AS_N)) * math.log2(AS_S) + (AS_N/(AS_S+AS_N)) * math.log2(AS_N))
+entropia_F9 = -((F9_S/(F9_S+F9_N)) * math.log2(F9_S) + (F9_N/(F9_S+F9_N)) * math.log2(F9_N))
+entropia_HA = -((HA_S/(HA_S+HA_N)) * math.log2(HA_S) + (HA_N/(HA_S+HA_N)) * math.log2(HA_N))
+entropia__9E = -((_9E_S/(_9E_S+_9E_N)) * math.log2(_9E_S) + (_9E_N/(_9E_S+_9E_N)) * math.log2(_9E_N))
+
+#aqui só foi pra eu me achar que eu me perdi e utilizei a ia pra escrever pra mim pq a coragem tava 10
+#print("Entropia para DL:", entropia_DL)
+#print("Entropia para OO:", entropia_OO)
+#print("Entropia para B6:", entropia_B6)
+#print("Entropia para US:", entropia_US)
+#print("Entropia para FL:", entropia_FL)
+#print("Entropia para WN:", entropia_WN)
+#print("Entropia para CO:", entropia_CO)
+#print("Entropia para AA:", entropia_AA)
+#print("Entropia para YV:", entropia_YV)
+#print("Entropia para EV:", entropia_EV)
+#print("Entropia para XE:", entropia_XE)
+#print("Entropia para OH:", entropia_OH)
+#print("Entropia para UA:", entropia_UA)
+#print("Entropia para MQ:", entropia_MQ)
+#print("Entropia para AS:", entropia_AS)
+#print("Entropia para F9:", entropia_F9)
+#print("Entropia para HA:", entropia_HA)
+#print("Entropia para 9E:", entropia__9E)
+#print(entropia)
+
+
+# curiosidade o \ no python é pra dizer que continua na proxima linha 
+total_compania = ((dl_N+dl_S)/numero_de_linhas) * entropia_DL + \
+                 ((OO_N+OO_S)/numero_de_linhas) * entropia_OO + \
+                 ((B6_N+B6_S)/numero_de_linhas) * entropia_B6 + \
+                 ((US_N+US_S)/numero_de_linhas) * entropia_US + \
+                 ((FL_N+FL_S)/numero_de_linhas) * entropia_FL + \
+                 ((WN_N+WN_S)/numero_de_linhas) * entropia_WN + \
+                 ((CO_N+CO_S)/numero_de_linhas) * entropia_CO + \
+                 ((AA_N+AA_S)/numero_de_linhas) * entropia_AA + \
+                 ((YV_N+YV_S)/numero_de_linhas) * entropia_YV + \
+                 ((EV_N+EV_S)/numero_de_linhas) * entropia_EV + \
+                 ((_9E_N+_9E_S)/numero_de_linhas) * entropia__9E + \
+                 ((OH_N+OH_S)/numero_de_linhas) * entropia_OH + \
+                 ((UA_N+UA_S)/numero_de_linhas) * entropia_UA + \
+                 ((MQ_N+MQ_S)/numero_de_linhas) * entropia_MQ + \
+                 ((AS_N+AS_S)/numero_de_linhas) * entropia_AS + \
+                 ((F9_N+F9_S)/numero_de_linhas) * entropia_F9 + \
+                 ((HA_N+HA_S)/numero_de_linhas) * entropia_HA
+
+print("Total Compania:", total_compania)
+pureza = entropia + total_compania
+print(pureza)
+#ENTÃO DESCOBRI QUE EU ERREI A DESGRAÇA DA CONTA, VOU DORMI AMANHA DESCUBRO 
