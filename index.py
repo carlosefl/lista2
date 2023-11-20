@@ -272,24 +272,25 @@ HA_N = banco[filtro2].shape[0]
 #não existe nenhum caso estremo vamo pra ponta do lapiz calcular a entropia da classe, para isso vou ter que tirar de cada variavel e bem já estou sem criatividade pra nomes atualmente são 3:00 da madruga :) vou mentir não que to me perdendo todo kkkkkkkkk
 #observação vou fazer um pequeno ajuste tecnico pois eu percebi que não fiz uma varivel que contem a quantidade total de casos de uma unica companhia *-*
 
-entropia_DL = -((dl_S/(dl_S+dl_N)) * math.log2(dl_S) + (dl_N/(dl_S+dl_N)) * math.log2(dl_N))
-entropia_OO = -((OO_S/(OO_S+OO_N)) * math.log2(OO_S) + (OO_N/(OO_S+OO_N)) * math.log2(OO_N))
-entropia_B6 = -((B6_S/(B6_S+B6_N)) * math.log2(B6_S) + (B6_N/(B6_S+B6_N)) * math.log2(B6_N))
-entropia_US = -((US_S/(US_S+US_N)) * math.log2(US_S) + (US_N/(US_S+US_N)) * math.log2(US_N))
-entropia_FL = -((FL_S/(FL_S+FL_N)) * math.log2(FL_S) + (FL_N/(FL_S+FL_N)) * math.log2(FL_N))
-entropia_WN = -((WN_S/(WN_S+WN_N)) * math.log2(WN_S) + (WN_N/(WN_S+WN_N)) * math.log2(WN_N))
-entropia_CO = -((CO_S/(CO_S+CO_N)) * math.log2(CO_S) + (CO_N/(CO_S+CO_N)) * math.log2(CO_N))
-entropia_AA = -((AA_S/(AA_S+AA_N)) * math.log2(AA_S) + (AA_N/(AA_S+AA_N)) * math.log2(AA_N))
-entropia_YV = -((YV_S/(YV_S+YV_N)) * math.log2(YV_S) + (YV_N/(YV_S+YV_N)) * math.log2(YV_N))
-entropia_EV = -((EV_S/(EV_S+EV_N)) * math.log2(EV_S) + (EV_N/(EV_S+EV_N)) * math.log2(EV_N))
-entropia_XE = -((_9E_S/(_9E_S+_9E_N)) * math.log2(_9E_S) + (_9E_N/(_9E_S+_9E_N)) * math.log2(_9E_N))
-entropia_OH = -((OH_S/(OH_S+OH_N)) * math.log2(OH_S) + (OH_N/(OH_S+OH_N)) * math.log2(OH_N))
-entropia_UA = -((UA_S/(UA_S+UA_N)) * math.log2(UA_S) + (UA_N/(UA_S+UA_N)) * math.log2(UA_N))
-entropia_MQ = -((MQ_S/(MQ_S+MQ_N)) * math.log2(MQ_S) + (MQ_N/(MQ_S+MQ_N)) * math.log2(MQ_N))
-entropia_AS = -((AS_S/(AS_S+AS_N)) * math.log2(AS_S) + (AS_N/(AS_S+AS_N)) * math.log2(AS_N))
-entropia_F9 = -((F9_S/(F9_S+F9_N)) * math.log2(F9_S) + (F9_N/(F9_S+F9_N)) * math.log2(F9_N))
-entropia_HA = -((HA_S/(HA_S+HA_N)) * math.log2(HA_S) + (HA_N/(HA_S+HA_N)) * math.log2(HA_N))
-entropia__9E = -((_9E_S/(_9E_S+_9E_N)) * math.log2(_9E_S) + (_9E_N/(_9E_S+_9E_N)) * math.log2(_9E_N))
+entropia_DL = -((dl_S/DL) * math.log2(dl_S/DL) + (dl_N/DL) * math.log2(dl_N/DL))
+entropia_OO = -((OO_S/OO) * math.log2(OO_S/OO) + (OO_N/OO) * math.log2(OO_N/OO))
+entropia_B6 = -((B6_S/B6) * math.log2(B6_S/B6) + (B6_N/B6) * math.log2(B6_N/B6))
+entropia_US = -((US_S/US) * math.log2(US_S/US) + (US_N/US) * math.log2(US_N/US))
+entropia_FL = -((FL_S/FL) * math.log2(FL_S/FL) + (FL_N/FL) * math.log2(FL_N/FL))
+entropia_WN = -((WN_S/WN) * math.log2(WN_S/WN) + (WN_N/WN) * math.log2(WN_N/WN))
+entropia_CO = -((CO_S/CO) * math.log2(CO_S/CO) + (CO_N/CO) * math.log2(CO_N/CO))
+entropia_AA = -((AA_S/AA) * math.log2(AA_S/AA) + (AA_N/AA) * math.log2(AA_N/AA))
+entropia_YV = -((YV_S/YV) * math.log2(YV_S/YV) + (YV_N/YV) * math.log2(YV_N/YV))
+entropia_EV = -((EV_S/EV) * math.log2(EV_S/EV) + (EV_N/EV) * math.log2(EV_N/EV))
+entropia_XE = -((XE_S/XE) * math.log2(XE_S/XE) + (XE_N/XE) * math.log2(XE_N/XE))
+entropia__9E = -((_9E_S/_9E) * math.log2(_9E_S/_9E) + (_9E_N/_9E) * math.log2(_9E_N/_9E))
+entropia_OH = -((OH_S/OH) * math.log2(OH_S/OH) + (OH_N/OH) * math.log2(OH_N/OH))
+entropia_UA = -((UA_S/UA) * math.log2(UA_S/UA) + (UA_N/UA) * math.log2(UA_N/UA))
+entropia_MQ = -((MQ_S/MQ) * math.log2(MQ_S/MQ) + (MQ_N/MQ) * math.log2(MQ_N/MQ))
+entropia_AS = -((AS_S/AS) * math.log2(AS_S/AS) + (AS_N/AS) * math.log2(AS_N/AS))
+entropia_F9 = -((F9_S/F9) * math.log2(F9_S/F9) + (F9_N/F9) * math.log2(F9_N/F9))
+entropia_HA = -((HA_S/HA) * math.log2(HA_S/HA) + (HA_N/HA) * math.log2(HA_N/HA))
+
 
 #aqui só foi pra eu me achar que eu me perdi e utilizei a ia pra escrever pra mim pq a coragem tava 10
 #print("Entropia para DL:", entropia_DL)
@@ -314,25 +315,25 @@ entropia__9E = -((_9E_S/(_9E_S+_9E_N)) * math.log2(_9E_S) + (_9E_N/(_9E_S+_9E_N)
 
 
 # curiosidade o \ no python é pra dizer que continua na proxima linha 
-total_compania = ((dl_N+dl_S)/numero_de_linhas) * entropia_DL + \
-                 ((OO_N+OO_S)/numero_de_linhas) * entropia_OO + \
-                 ((B6_N+B6_S)/numero_de_linhas) * entropia_B6 + \
-                 ((US_N+US_S)/numero_de_linhas) * entropia_US + \
-                 ((FL_N+FL_S)/numero_de_linhas) * entropia_FL + \
-                 ((WN_N+WN_S)/numero_de_linhas) * entropia_WN + \
-                 ((CO_N+CO_S)/numero_de_linhas) * entropia_CO + \
-                 ((AA_N+AA_S)/numero_de_linhas) * entropia_AA + \
-                 ((YV_N+YV_S)/numero_de_linhas) * entropia_YV + \
-                 ((EV_N+EV_S)/numero_de_linhas) * entropia_EV + \
-                 ((_9E_N+_9E_S)/numero_de_linhas) * entropia__9E + \
-                 ((OH_N+OH_S)/numero_de_linhas) * entropia_OH + \
-                 ((UA_N+UA_S)/numero_de_linhas) * entropia_UA + \
-                 ((MQ_N+MQ_S)/numero_de_linhas) * entropia_MQ + \
-                 ((AS_N+AS_S)/numero_de_linhas) * entropia_AS + \
-                 ((F9_N+F9_S)/numero_de_linhas) * entropia_F9 + \
-                 ((HA_N+HA_S)/numero_de_linhas) * entropia_HA
+total_compania = ((DL)/numero_de_linhas) * entropia_DL + \
+                 ((OO)/numero_de_linhas) * entropia_OO + \
+                 ((B6)/numero_de_linhas) * entropia_B6 + \
+                 ((US)/numero_de_linhas) * entropia_US + \
+                 ((FL)/numero_de_linhas) * entropia_FL + \
+                 ((WN)/numero_de_linhas) * entropia_WN + \
+                 ((CO)/numero_de_linhas) * entropia_CO + \
+                 ((AA)/numero_de_linhas) * entropia_AA + \
+                 ((YV)/numero_de_linhas) * entropia_YV + \
+                 ((EV)/numero_de_linhas) * entropia_EV + \
+                 ((_9E)/numero_de_linhas) * entropia__9E + \
+                 ((OH)/numero_de_linhas) * entropia_OH + \
+                 ((UA)/numero_de_linhas) * entropia_UA + \
+                 ((MQ)/numero_de_linhas) * entropia_MQ + \
+                 ((AS)/numero_de_linhas) * entropia_AS + \
+                 ((F9)/numero_de_linhas) * entropia_F9 + \
+                 ((HA)/numero_de_linhas) * entropia_HA
 
 print("Total Compania:", total_compania)
-pureza = entropia + total_compania
+pureza = entropia - total_compania
+print(entropia)
 print(pureza)
-#ENTÃO DESCOBRI QUE EU ERREI A DESGRAÇA DA CONTA, VOU DORMI AMANHA DESCUBRO 
